@@ -1,0 +1,46 @@
+[user]
+	name = tamago324
+	email = tamago_pad@yahoo.co.jp
+
+[core]
+	autocrlf = input
+	excludesfile = ~/git/ignore
+
+# [credential]
+# 	# 資格情報を保存する
+# 	helper = store
+
+# [url "git@github.com:"]
+#     pushInsteadOf = https://github.com/
+
+[rebase]
+	autostash = true
+	# https://motemen.hatenablog.com/entry/2015/10/git-commit-fixup
+	# fixup! が先頭についているコミットを自動で収集してくれる
+	autosquash = true
+[pull]
+	rebase = true
+[push]
+	# 今のブランチ名で push する
+	# もし、リモートになければ、自動で作る
+	# https://qiita.com/awakia/items/6aaea1ffecba725be601
+	default = current
+
+[diff]
+	algorithm = histogram
+	# https://kakakakakku.hatenablog.com/entry/2017/03/22/195640
+	indentHeuristic = true
+	# https://qiita.com/shibukk/items/8c9362a5bd399b9c56be#%E3%81%8A%E3%81%BE%E3%81%91
+	compactionHeuristic = true
+
+[github]
+	user = tamago324
+
+[color "status"]
+	added     = green
+	changed   = red
+	untracked = yellow
+	unmerged  = magenta
+
+[init]
+    defaultBranch = main

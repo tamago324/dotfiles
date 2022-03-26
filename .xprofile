@@ -1,0 +1,3 @@
+if [ -e /home/tamago324/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tamago324/.nix-profile/etc/profile.d/nix.sh; fi
+
+alttab -w 1 &
